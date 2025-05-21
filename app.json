@@ -1,29 +1,33 @@
 {
   "expo": {
-    "name": "cenol-app",
-    "slug": "cenol-app",
+    "name": "Cenol.pl",
+    "slug": "cenol",
     "version": "1.0.0",
+    "description": "Cenol - Centrum ogłoszeń lokalnych. Znajdź lub zamieść ogłoszenie w swojej okolicy!",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      "package": "pl.cenol.app",
+      "versionCode": 1
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "f07297de-d439-4ede-b6f8-e693208967d6"
+      }
     }
   }
 }
